@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Change colors in map</title>
+    <link rel='stylesheet' type='text/css' href='collapsed-table.css'>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #inputs {
+            position: absolute;
+            z-index: 999;
+            max-height: 100%;
+            overflow: scroll;
+            overflow-x: hidden;
+            background: white;
+        }
+        #inputs input, #inputs button, #dinamic-select select {
+            border-radius: 3px;
+            margin: 3px;
+        }
+        #static-inputs *, #dinamic-select select {
+            height: 28px;
+        }
+        #save-btn, #json-btn {
+            background-color: #7be4e4;
+            border-color: #7be4e4;
+        }
+        #dinamic-select select {
+            width: 97%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id='inputs'>
+        <div id='collapsed-inputs'></div>
+        <div id='dinamic-select'></div>
+        <div id='static-inputs'>
+            <input id='name-of-style' type='text' placeholder='Name of style' />
+            <button id='save-btn' disabled>Save it!</button>
+            <button id='json-btn'>Download it!</button>
+        </div>
+    </div>
+    <div id='map'></div>
+    
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCD4azsZcpH9WR37NRqBEPSzZ0HAeYyA3Q&callback=initMap'
+            async defer></script>
+    <script src='collapsed-table.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>

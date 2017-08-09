@@ -1,0 +1,14 @@
+#double-collapsed-table .hide {
+    display: none;
+}
+#double-collapsed-table .opened {
+    background: #ffc0c0;
+}
+#double-collapsed-table th {
+    color: white;
+}
+#double-collapsed-table .th-0 { background: #616161; }
+#double-collapsed-table .th-1 { background: #757575; }
+#double-collapsed-table .th-2 { background: #9e9e9e; }
+#double-collapsed-table .th-3 { background: #bdbdbd; }
+#double-collapsed-table .th-4 { background: #e0e0e0; }
